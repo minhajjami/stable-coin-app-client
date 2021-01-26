@@ -21,6 +21,7 @@ const Token = ({ formData, setForm, navigation }) => {
                 autoComplete="off"
                 fullWidth
             />
+            <h6>You will get X AOA @preco Taoa/aoa </h6>
             <Button
                 variant="contained"
                 fullWidth

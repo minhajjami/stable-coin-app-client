@@ -4,13 +4,15 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import CoinDrop from './CoinDrop';
 
+
 const Currency = ({ formData, setForm, navigation }) => {
 
     const { coin,quantity } = formData;
 
     return (
-        <div className="mt-5">
+        <div className="mt-5">          
             <Container maxWidth="xs" style={{border:'1px solid grey'}}className="p-5" >
+            <h5>Stablecoin Gateway - Buy</h5>
             <CoinDrop label="Coin " name="coin" value={coin} onChange={setForm} />
             <TextField
                 label="Quantity"
@@ -22,7 +24,9 @@ const Currency = ({ formData, setForm, navigation }) => {
                 variant="outlined"
                 autoComplete="off"
                 fullWidth
+                required
             />
+            <h6>Total cost @price AOA/TAOA</h6>
             <Button
                 variant="contained"
                 fullWidth

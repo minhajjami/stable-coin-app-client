@@ -18,7 +18,9 @@ const Address = ({ formData, setForm, navigation }) => {
           autoComplete="off"
           fullWidth
         />
-
+         <p>You will receive your TAOA in this address</p>
+         <p className="text-danger">Pay close attention mistakes will make you loose all your assets and there is nothing we can do to help</p>
+         <a className="anchor" text-align="center" href="https://www.binance.org/en/smartChain" target="_blank" >Don't have a BC wallet yet?</a>
         <div style={{ marginTop: "1rem" }}>
           <Button
             color="secondary"

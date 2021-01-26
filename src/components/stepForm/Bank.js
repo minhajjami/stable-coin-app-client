@@ -9,6 +9,8 @@ const Bank = ({ formData, setForm, navigation }) => {
         <div className="mt-5">
         <Container maxWidth="xs"  style={{border:'1px solid grey'}}className="p-5">
         <BankDrop label="Bank " name="bank" value={bank} onChange={setForm} />
+        <p>Transfers between banks are usually faster. If available give preference to your local Bank and the system will automaticlly find the best P2P</p>
+        <a className="anchor" href="#">How long does it usually take?</a>
         <div style={{ marginTop: "1rem" }}>
           <Button
             color="secondary"
